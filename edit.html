@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/edit.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<title>todo list</title>
+</head>
+<body>
+<div class="wrapper">
+    <h1 style="font-size:20px;display:inline;margin-top:30px;">todoリスト</h1>
+	<div class="item-box">
+		<div style="margin: 10px;">
+			<h3>タスクを入力</h3>
+			<p>タスクをホバーすると並び替え、編集、削除可</p>
+			<div class="edit-box">
+				<form>
+					<textarea class="form-control" style="width: 90%; height: 50px; margin-bottom:10px;"></textarea>
+					<div>
+						<input class="btn btn-primary item_submit" type="button" value="保存する">
+						<input class="btn btn-default" type="reset" value="キャンセル">
+					</div>
+				</form>
+			</div>
+			<div id="sortable">
+			</div>
+		</div>
+    </div>
+</div>
+
+    <script type="text/javascript" src="js/edit.js"></script>
+</body>
+</html>
